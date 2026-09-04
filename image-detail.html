@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Detail — Eye Clinic App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+  <div class="brand"><span class="ring"></span><span>Eye Clinic</span></div>
+  <a class="nav-item " href="doctor-queue.html"><i class="ti ti-layout-grid"></i>Queue</a>
+<a class="nav-item active" href="patient-timeline.html"><i class="ti ti-timeline"></i>Timeline</a>
+<a class="nav-item " href="prescription-history.html"><i class="ti ti-file-prescription"></i>Prescriptions</a>
+<a class="nav-item " href="trend-graphs.html"><i class="ti ti-chart-line"></i>Results</a>
+<a class="nav-item " href="notifications.html"><i class="ti ti-bell"></i>Notifications</a>
+
+  <div class="sidebar-footer">
+    <a class="nav-item" href="index.html"><i class="ti ti-logout"></i>Sign out</a>
+  </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+  <div class="search-box"><i class="ti ti-search"></i><input placeholder="Search patients, records..." onclick="location.href='search-results.html'" readonly></div>
+  <div class="topbar-right">
+    <div class="role-switch"><a class="active" href="doctor-queue.html">Doctor</a><a class="" href="patient-search-receptionist.html">Receptionist</a><a class="" href="audit-log.html">Admin</a></div>
+    <div class="avatar">RM</div>
+  </div>
+</header>
+    <main class="content">
+      
+<div class="page-head">
+  <div>
+    <a class="breadcrumb" href="patient-timeline.html"><i class="ti ti-arrow-left"></i>Anita Sharma · Timeline</a>
+    <h1>OCT scan, right eye</h1>
+  </div>
+  <div style="display:flex; gap:8px;">
+    <button><i class="ti ti-pencil"></i>Annotate</button>
+    <button style="background:var(--accent-bg); color:var(--accent); border-color:var(--accent-border);"><i class="ti ti-layout-columns"></i>Compare</button>
+    <button><i class="ti ti-download"></i></button>
+  </div>
+</div>
+<div class="grid-2" style="grid-template-columns: minmax(0,1fr) 240px; gap:20px; align-items:start;">
+  <div>
+    <div class="grid-2">
+      <div>
+        <p class="muted" style="font-size:12px; text-align:center; margin-bottom:8px;">12 Aug 2026 · current</p>
+        <div class="scan-thumb"></div>
+      </div>
+      <div>
+        <p class="muted" style="font-size:12px; text-align:center; margin-bottom:8px;">14 Mar 2026 · baseline</p>
+        <div class="scan-thumb" style="opacity:0.85;"></div>
+      </div>
+    </div>
+    <p class="muted" style="font-size:12px; text-align:center; margin-top:12px;">Cup-to-disc ratio increased since baseline — consistent with note on progression risk</p>
+    <p class="section-label" style="margin-top:22px;">Other images, this visit</p>
+    <div style="display:flex; gap:8px;">
+      <div class="scan-thumb" style="width:56px;height:56px;border:1.5px solid var(--accent-border);"></div>
+      <div class="scan-thumb" style="width:56px;height:56px; background:linear-gradient(180deg,var(--surface-1),var(--surface-3));"></div>
+      <div class="scan-thumb" style="width:56px;height:56px; background:linear-gradient(180deg,var(--surface-1),var(--surface-3));"></div>
+    </div>
+  </div>
+  <div>
+    <p class="section-label">Details</p>
+    <div style="display:flex; flex-direction:column; gap:7px; font-size:13px; margin-bottom:18px;">
+      <div style="display:flex; justify-content:space-between;"><span class="muted">Test type</span><span>OCT</span></div>
+      <div style="display:flex; justify-content:space-between;"><span class="muted">Eye</span><span>Right (OD)</span></div>
+      <div style="display:flex; justify-content:space-between;"><span class="muted">Visit date</span><span>12 Aug 2026</span></div>
+      <div style="display:flex; justify-content:space-between;"><span class="muted">Uploaded by</span><span>Dr. Mehta</span></div>
+    </div>
+    <p class="section-label">Compare against</p>
+    <select style="margin-bottom:18px;">
+      <option>14 Mar 2026 · baseline</option>
+      <option>2 Jun 2026</option>
+    </select>
+    <div style="margin-bottom:18px;"><span class="badge badge-warning">Unreviewed</span></div>
+    <button class="btn-primary btn-block">Mark as reviewed</button>
+  </div>
+</div>
+
+    </main>
+  </div>
+</div>
+</body>
+</html>

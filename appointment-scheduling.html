@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scheduling — Eye Clinic App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+  <div class="brand"><span class="ring"></span><span>Eye Clinic</span></div>
+  <a class="nav-item " href="patient-registration.html"><i class="ti ti-user-plus"></i>Register Patient</a>
+<a class="nav-item " href="patient-search-receptionist.html"><i class="ti ti-users"></i>Patients</a>
+<a class="nav-item active" href="appointment-scheduling.html"><i class="ti ti-calendar"></i>Schedule</a>
+<a class="nav-item " href="notifications.html"><i class="ti ti-bell"></i>Notifications</a>
+
+  <div class="sidebar-footer">
+    <a class="nav-item" href="index.html"><i class="ti ti-logout"></i>Sign out</a>
+  </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+  <div class="search-box"><i class="ti ti-search"></i><input placeholder="Search patients, records..." onclick="location.href='search-results.html'" readonly></div>
+  <div class="topbar-right">
+    <div class="role-switch"><a class="" href="doctor-queue.html">Doctor</a><a class="active" href="patient-search-receptionist.html">Receptionist</a><a class="" href="audit-log.html">Admin</a></div>
+    <div class="avatar">RD</div>
+  </div>
+</header>
+    <main class="content">
+      
+<div class="page-head">
+  <h1>Appointment scheduling</h1>
+  <div class="chip-tabs">
+    <a href="appointment-scheduling.html">Week</a>
+    <a class="active" href="appointment-scheduling.html">Day — Fri 4 Sep</a>
+  </div>
+</div>
+<div class="grid-2" style="grid-template-columns: 1fr 300px; align-items:start;">
+  <div class="grid-4">
+    <a class="stat-card" href="patient-profile-receptionist.html" style="padding:8px 10px; text-align:center; display:block; background:var(--accent-bg); border:1px solid var(--accent-border);"><span style="font-size:11px; color:var(--text-secondary);">9:00 AM</span><br><span style="font-size:12px; font-weight:500;">Anita Sharma</span></a>
+    <div class="stat-card" style="padding:8px 10px; text-align:center; color:var(--text-muted); font-size:12px;">9:30 AM<br><span style="font-size:11px;">Open</span></div>
+    <a class="stat-card" href="patient-profile-receptionist.html" style="padding:8px 10px; text-align:center; display:block; background:var(--accent-bg); border:1px solid var(--accent-border);"><span style="font-size:11px; color:var(--text-secondary);">10:00 AM</span><br><span style="font-size:12px; font-weight:500;">David Oliveira</span></a>
+    <div class="stat-card" style="padding:8px 10px; text-align:center; color:var(--text-muted); font-size:12px;">10:30 AM<br><span style="font-size:11px;">Open</span></div>
+    <div class="stat-card" style="padding:8px 10px; text-align:center; color:var(--text-muted); font-size:12px;">11:00 AM<br><span style="font-size:11px;">Open</span></div>
+    <a class="stat-card" href="patient-profile-receptionist.html" style="padding:8px 10px; text-align:center; display:block; background:var(--accent-bg); border:1px solid var(--accent-border);"><span style="font-size:11px; color:var(--text-secondary);">11:30 AM</span><br><span style="font-size:12px; font-weight:500;">Farah Khan</span></a>
+    <div class="stat-card" style="padding:8px 10px; text-align:center; color:var(--text-muted); font-size:12px;">12:00 PM<br><span style="font-size:11px;">Open</span></div>
+    <div class="stat-card" style="padding:8px 10px; text-align:center; color:var(--text-muted); font-size:12px;">12:30 PM<br><span style="font-size:11px;">Open</span></div>
+  </div>
+  <div class="card">
+    <p class="section-label">Book new appointment</p>
+    <div class="field"><label>Patient</label><input placeholder="Search patient..."></div>
+    <div class="field-row">
+      <div class="field"><label>Date</label><input type="date" value="2026-09-04"></div>
+      <div class="field"><label>Time</label><input type="time" value="14:00"></div>
+    </div>
+    <div class="field"><label>Visit type</label><select><option>Follow-up</option><option>New patient</option><option>Post-op check</option></select></div>
+    <div class="field"><label>Doctor</label><select><option>Dr. Mehta</option></select></div>
+    <a class="btn btn-primary btn-block" href="appointment-scheduling.html">Confirm booking</a>
+  </div>
+</div>
+
+    </main>
+  </div>
+</div>
+</body>
+</html>

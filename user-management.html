@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Users & Roles — Eye Clinic App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+  <div class="brand"><span class="ring"></span><span>Eye Clinic</span></div>
+  <a class="nav-item " href="audit-log.html"><i class="ti ti-list-details"></i>Audit Log</a>
+<a class="nav-item active" href="user-management.html"><i class="ti ti-users-group"></i>Users & Roles</a>
+<a class="nav-item " href="clinic-settings.html"><i class="ti ti-settings"></i>Clinic Settings</a>
+<a class="nav-item " href="subscription-licensing.html"><i class="ti ti-credit-card"></i>Licensing</a>
+
+  <div class="sidebar-footer">
+    <a class="nav-item" href="index.html"><i class="ti ti-logout"></i>Sign out</a>
+  </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+  <div class="search-box"><i class="ti ti-search"></i><input placeholder="Search patients, records..." onclick="location.href='search-results.html'" readonly></div>
+  <div class="topbar-right">
+    <div class="role-switch"><a class="" href="doctor-queue.html">Doctor</a><a class="" href="patient-search-receptionist.html">Receptionist</a><a class="active" href="audit-log.html">Admin</a></div>
+    <div class="avatar">SR</div>
+  </div>
+</header>
+    <main class="content">
+      
+<div class="page-head">
+  <h1>Users & roles</h1>
+  <button class="btn-primary"><i class="ti ti-user-plus"></i>Add user</button>
+</div>
+<table>
+  <tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th><th></th></tr>
+  <tr><td>Dr. R. Mehta</td><td class='muted'>r.mehta@clinic.com</td><td>Doctor</td>
+  <td><span class="badge badge-success">Active</span></td>
+  <td style="text-align:right;"><a class="btn btn-ghost" href="user-management.html"><i class="ti ti-dots"></i></a></td></tr>
+  <tr><td>R. Dutta</td><td class='muted'>r.dutta@clinic.com</td><td>Receptionist</td>
+  <td><span class="badge badge-success">Active</span></td>
+  <td style="text-align:right;"><a class="btn btn-ghost" href="user-management.html"><i class="ti ti-dots"></i></a></td></tr>
+  <tr><td>Dr. K. Sen</td><td class='muted'>k.sen@clinic.com</td><td>Doctor</td>
+  <td><span class="badge badge-success">Active</span></td>
+  <td style="text-align:right;"><a class="btn btn-ghost" href="user-management.html"><i class="ti ti-dots"></i></a></td></tr>
+  <tr><td>S. Rao</td><td class='muted'>s.rao@clinic.com</td><td>Admin</td>
+  <td><span class="badge badge-success">Active</span></td>
+  <td style="text-align:right;"><a class="btn btn-ghost" href="user-management.html"><i class="ti ti-dots"></i></a></td></tr>
+  <tr><td>P. Banerjee</td><td class='muted'>p.banerjee@clinic.com</td><td>Receptionist</td>
+  <td><span class="badge badge-warning">Invited</span></td>
+  <td style="text-align:right;"><a class="btn btn-ghost" href="user-management.html"><i class="ti ti-dots"></i></a></td></tr>
+</table>
+<div class="card" style="max-width:480px; margin-top:24px;">
+  <p class="section-label">Invite a new user</p>
+  <div class="field"><label>Email</label><input placeholder="name@clinic.com"></div>
+  <div class="field"><label>Role</label><select><option>Receptionist</option><option>Doctor</option><option>Admin</option></select></div>
+  <p class="muted" style="font-size:12px; margin-bottom:14px;">Role determines app access — Receptionists get scheduling/registration only, Doctors get full clinical access.</p>
+  <a class="btn btn-primary" href="user-management.html">Send invite</a>
+</div>
+
+    </main>
+  </div>
+</div>
+</body>
+</html>

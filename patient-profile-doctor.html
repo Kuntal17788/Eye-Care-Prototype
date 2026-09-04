@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Profile — Eye Clinic App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+  <div class="brand"><span class="ring"></span><span>Eye Clinic</span></div>
+  <a class="nav-item active" href="doctor-queue.html"><i class="ti ti-layout-grid"></i>Queue</a>
+<a class="nav-item " href="patient-timeline.html"><i class="ti ti-timeline"></i>Timeline</a>
+<a class="nav-item " href="prescription-history.html"><i class="ti ti-file-prescription"></i>Prescriptions</a>
+<a class="nav-item " href="trend-graphs.html"><i class="ti ti-chart-line"></i>Results</a>
+<a class="nav-item " href="notifications.html"><i class="ti ti-bell"></i>Notifications</a>
+
+  <div class="sidebar-footer">
+    <a class="nav-item" href="index.html"><i class="ti ti-logout"></i>Sign out</a>
+  </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+  <div class="search-box"><i class="ti ti-search"></i><input placeholder="Search patients, records..." onclick="location.href='search-results.html'" readonly></div>
+  <div class="topbar-right">
+    <div class="role-switch"><a class="active" href="doctor-queue.html">Doctor</a><a class="" href="patient-search-receptionist.html">Receptionist</a><a class="" href="audit-log.html">Admin</a></div>
+    <div class="avatar">RM</div>
+  </div>
+</header>
+    <main class="content">
+      
+<div class="page-head">
+  <div style="display:flex; gap:14px;">
+    <div class="avatar" style="width:52px;height:52px;font-size:16px;">AS</div>
+    <div>
+      <h1>Anita Sharma</h1>
+      <p class="muted" style="margin-top:4px;">42 yrs, female · MRN 00457</p>
+      <p class="muted" style="margin-top:4px;">Last visit: 12 Aug 2026 · Glaucoma suspect, right eye</p>
+    </div>
+  </div>
+  <div style="display:flex; gap:8px;">
+    <a class="btn" href="pdf-export.html"><i class="ti ti-file-export"></i>Export summary</a>
+    <a class="btn" href="appointment-scheduling.html"><i class="ti ti-calendar-plus"></i>Schedule visit</a>
+  </div>
+</div>
+
+<div class="grid-4" style="margin-bottom:16px;">
+  <div class="stat-card"><p class="stat-label">Visual acuity (R/L)</p><p class="stat-value">6/9 · 6/6</p></div>
+  <div class="stat-card"><p class="stat-label">IOP (R/L)</p><p class="stat-value">22 · 17 mmHg</p></div>
+  <div class="stat-card"><p class="stat-label">Total visits</p><p class="stat-value">7</p></div>
+  <div class="stat-card"><p class="stat-label">Open items</p><p class="stat-value" style="color:var(--warning);">2</p></div>
+</div>
+
+<div class="tag-row">
+  <span class="badge badge-accent">Diabetic</span>
+  <span class="badge badge-warning">Glaucoma suspect</span>
+  <span class="badge badge-neutral">On latanoprost</span>
+</div>
+
+<div class="grid-4" style="margin-top:8px;">
+  <a class="card" href="patient-timeline.html" style="border-radius:12px;">
+    <i class="ti ti-timeline" style="font-size:20px; color:var(--accent);"></i>
+    <p style="font-weight:500; margin-top:8px;">Timeline</p>
+    <p class="muted" style="font-size:12px; margin-top:2px;">All visits, tests, images</p>
+  </a>
+  <a class="card" href="patient-timeline.html" style="border-radius:12px;">
+    <i class="ti ti-photo" style="font-size:20px; color:var(--accent);"></i>
+    <p style="font-weight:500; margin-top:8px;">Images</p>
+    <p class="muted" style="font-size:12px; margin-top:2px;">Fundus, OCT, fields</p>
+  </a>
+  <a class="card" href="trend-graphs.html" style="border-radius:12px;">
+    <i class="ti ti-chart-line" style="font-size:20px; color:var(--accent);"></i>
+    <p style="font-weight:500; margin-top:8px;">Test trends</p>
+    <p class="muted" style="font-size:12px; margin-top:2px;">Acuity, IOP over time</p>
+  </a>
+  <a class="card" href="prescription-history.html" style="border-radius:12px;">
+    <i class="ti ti-file-prescription" style="font-size:20px; color:var(--accent);"></i>
+    <p style="font-weight:500; margin-top:8px;">Prescriptions</p>
+    <p class="muted" style="font-size:12px; margin-top:2px;">Current and past</p>
+  </a>
+</div>
+
+<p class="section-label" style="margin-top:22px;">Recent activity</p>
+<div class="row-list" style="grid-template-columns:1fr;">
+  <a href="image-detail.html" style="display:flex; justify-content:space-between; align-items:center; padding:10px 6px; border-bottom:0.5px solid var(--border);">
+    <div><p>OCT scan uploaded, right eye</p><p class="muted" style="font-size:12px;">12 Aug 2026</p></div>
+    <span class="badge badge-warning">Unreviewed</span>
+  </a>
+  <a href="trend-graphs.html" style="display:flex; justify-content:space-between; align-items:center; padding:10px 6px; border-bottom:0.5px solid var(--border);">
+    <div><p>IOP recheck recorded</p><p class="muted" style="font-size:12px;">12 Aug 2026</p></div>
+    <span class="badge badge-success">Reviewed</span>
+  </a>
+  <a href="prescription-history.html" style="display:flex; justify-content:space-between; align-items:center; padding:10px 6px;">
+    <div><p>Prescription renewed, latanoprost</p><p class="muted" style="font-size:12px;">15 Jul 2026</p></div>
+    <span class="badge badge-success">Reviewed</span>
+  </a>
+</div>
+
+    </main>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subscription & Licensing — Eye Clinic App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+  <div class="brand"><span class="ring"></span><span>Eye Clinic</span></div>
+  <a class="nav-item " href="audit-log.html"><i class="ti ti-list-details"></i>Audit Log</a>
+<a class="nav-item " href="user-management.html"><i class="ti ti-users-group"></i>Users & Roles</a>
+<a class="nav-item " href="clinic-settings.html"><i class="ti ti-settings"></i>Clinic Settings</a>
+<a class="nav-item active" href="subscription-licensing.html"><i class="ti ti-credit-card"></i>Licensing</a>
+
+  <div class="sidebar-footer">
+    <a class="nav-item" href="index.html"><i class="ti ti-logout"></i>Sign out</a>
+  </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+  <div class="search-box"><i class="ti ti-search"></i><input placeholder="Search patients, records..." onclick="location.href='search-results.html'" readonly></div>
+  <div class="topbar-right">
+    <div class="role-switch"><a class="" href="doctor-queue.html">Doctor</a><a class="" href="patient-search-receptionist.html">Receptionist</a><a class="active" href="audit-log.html">Admin</a></div>
+    <div class="avatar">SR</div>
+  </div>
+</header>
+    <main class="content">
+      
+<div class="page-head"><h1>Subscription & licensing</h1></div>
+<div class="grid-2" style="grid-template-columns: 320px 1fr; align-items:start;">
+  <div class="card">
+    <p class="section-label">Current plan</p>
+    <h2>SaaS — Clinic Pro</h2>
+    <p class="muted" style="margin:6px 0 16px;">₹8,500 / month · billed monthly</p>
+    <div style="display:flex; flex-direction:column; gap:6px; font-size:13px; margin-bottom:18px;">
+      <div style="display:flex; justify-content:space-between;"><span class="muted">Active users</span><span>5 / 10</span></div>
+      <div style="display:flex; justify-content:space-between;"><span class="muted">Patients stored</span><span>1,240</span></div>
+      <div style="display:flex; justify-content:space-between;"><span class="muted">Storage used</span><span>4.2 GB / 20 GB</span></div>
+    </div>
+    <button class="btn-primary btn-block">Change plan</button>
+    <button class="btn-block" style="margin-top:8px;">Switch to self-hosted license</button>
+  </div>
+  <div>
+    <p class="section-label">Invoice history</p>
+    <table>
+      <tr><th>Date</th><th>Amount</th><th>Status</th><th></th></tr>
+      <tr><td>1 Sep 2026</td><td>₹8,500</td><td><span class="badge badge-success">Paid</span></td><td style="text-align:right;"><a class="btn btn-ghost" href="subscription-licensing.html"><i class="ti ti-download"></i></a></td></tr>
+      <tr><td>1 Aug 2026</td><td>₹8,500</td><td><span class="badge badge-success">Paid</span></td><td style="text-align:right;"><a class="btn btn-ghost" href="subscription-licensing.html"><i class="ti ti-download"></i></a></td></tr>
+      <tr><td>1 Jul 2026</td><td>₹8,500</td><td><span class="badge badge-success">Paid</span></td><td style="text-align:right;"><a class="btn btn-ghost" href="subscription-licensing.html"><i class="ti ti-download"></i></a></td></tr>
+    </table>
+  </div>
+</div>
+
+    </main>
+  </div>
+</div>
+</body>
+</html>

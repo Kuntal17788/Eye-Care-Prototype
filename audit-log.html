@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audit Log — Eye Clinic App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+  <div class="brand"><span class="ring"></span><span>Eye Clinic</span></div>
+  <a class="nav-item active" href="audit-log.html"><i class="ti ti-list-details"></i>Audit Log</a>
+<a class="nav-item " href="user-management.html"><i class="ti ti-users-group"></i>Users & Roles</a>
+<a class="nav-item " href="clinic-settings.html"><i class="ti ti-settings"></i>Clinic Settings</a>
+<a class="nav-item " href="subscription-licensing.html"><i class="ti ti-credit-card"></i>Licensing</a>
+
+  <div class="sidebar-footer">
+    <a class="nav-item" href="index.html"><i class="ti ti-logout"></i>Sign out</a>
+  </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+  <div class="search-box"><i class="ti ti-search"></i><input placeholder="Search patients, records..." onclick="location.href='search-results.html'" readonly></div>
+  <div class="topbar-right">
+    <div class="role-switch"><a class="" href="doctor-queue.html">Doctor</a><a class="" href="patient-search-receptionist.html">Receptionist</a><a class="active" href="audit-log.html">Admin</a></div>
+    <div class="avatar">SR</div>
+  </div>
+</header>
+    <main class="content">
+      
+<div class="page-head">
+  <h1>Audit log</h1>
+  <div style="display:flex; gap:8px;">
+    <select style="width:auto;"><option>All users</option><option>Dr. Mehta</option><option>R. Dutta</option></select>
+    <select style="width:auto;"><option>Last 7 days</option><option>Last 30 days</option></select>
+  </div>
+</div>
+<table>
+  <tr><th>Timestamp</th><th>User</th><th>Action</th><th>Record</th></tr>
+  <tr><td class='muted' style='font-family:var(--font-mono); font-size:12px;'>2026-09-04 09:12</td><td>Dr. Mehta</td><td>Viewed clinical record</td><td class='muted'>Anita Sharma (MRN 00457)</td></tr>
+  <tr><td class='muted' style='font-family:var(--font-mono); font-size:12px;'>2026-09-04 09:10</td><td>Dr. Mehta</td><td>Marked image reviewed</td><td class='muted'>OCT scan, Anita Sharma</td></tr>
+  <tr><td class='muted' style='font-family:var(--font-mono); font-size:12px;'>2026-09-03 16:44</td><td>R. Dutta</td><td>Registered patient</td><td class='muted'>Priya Nair (MRN 00461)</td></tr>
+  <tr><td class='muted' style='font-family:var(--font-mono); font-size:12px;'>2026-09-03 14:02</td><td>Dr. Mehta</td><td>Edited prescription</td><td class='muted'>Latanoprost, Anita Sharma</td></tr>
+  <tr><td class='muted' style='font-family:var(--font-mono); font-size:12px;'>2026-09-03 11:20</td><td>R. Dutta</td><td>Scheduled appointment</td><td class='muted'>David Oliveira, 12 Sep</td></tr>
+  <tr><td class='muted' style='font-family:var(--font-mono); font-size:12px;'>2026-09-02 17:05</td><td>S. Rao</td><td>Updated user role</td><td class='muted'>R. Dutta → Receptionist</td></tr>
+</table>
+
+    </main>
+  </div>
+</div>
+</body>
+</html>

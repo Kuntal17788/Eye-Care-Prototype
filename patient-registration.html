@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register Patient — Eye Clinic App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+  <div class="brand"><span class="ring"></span><span>Eye Clinic</span></div>
+  <a class="nav-item active" href="patient-registration.html"><i class="ti ti-user-plus"></i>Register Patient</a>
+<a class="nav-item " href="patient-search-receptionist.html"><i class="ti ti-users"></i>Patients</a>
+<a class="nav-item " href="appointment-scheduling.html"><i class="ti ti-calendar"></i>Schedule</a>
+<a class="nav-item " href="notifications.html"><i class="ti ti-bell"></i>Notifications</a>
+
+  <div class="sidebar-footer">
+    <a class="nav-item" href="index.html"><i class="ti ti-logout"></i>Sign out</a>
+  </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+  <div class="search-box"><i class="ti ti-search"></i><input placeholder="Search patients, records..." onclick="location.href='search-results.html'" readonly></div>
+  <div class="topbar-right">
+    <div class="role-switch"><a class="" href="doctor-queue.html">Doctor</a><a class="active" href="patient-search-receptionist.html">Receptionist</a><a class="" href="audit-log.html">Admin</a></div>
+    <div class="avatar">RD</div>
+  </div>
+</header>
+    <main class="content">
+      
+<div class="page-head">
+  <h1>Register new patient</h1>
+</div>
+<div class="card" style="max-width:640px;">
+  <p class="section-label">Personal details</p>
+  <div class="field-row">
+    <div class="field"><label>Full name</label><input placeholder="e.g. Anita Sharma"></div>
+    <div class="field"><label>Date of birth</label><input type="date"></div>
+  </div>
+  <div class="field-row">
+    <div class="field"><label>Gender</label><select><option>Female</option><option>Male</option><option>Other</option></select></div>
+    <div class="field"><label>Phone number</label><input placeholder="+91 98xxxxxxxx"></div>
+  </div>
+  <div class="field"><label>Email</label><input placeholder="patient@email.com"></div>
+  <div class="field"><label>Address</label><textarea rows="2" placeholder="Street, city, postal code"></textarea></div>
+  <hr class="divider">
+  <p class="section-label">Insurance & emergency contact</p>
+  <div class="field-row">
+    <div class="field"><label>Insurance provider</label><input placeholder="Optional"></div>
+    <div class="field"><label>Policy / ID number</label><input placeholder="Optional"></div>
+  </div>
+  <div class="field"><label>Emergency contact</label><input placeholder="Name and phone number"></div>
+  <div style="display:flex; gap:8px; justify-content:flex-end; margin-top:6px;">
+    <button>Cancel</button>
+    <a class="btn btn-primary" href="registration-confirmation.html">Register patient</a>
+  </div>
+</div>
+
+    </main>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prescriptions — Eye Clinic App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+  <div class="brand"><span class="ring"></span><span>Eye Clinic</span></div>
+  <a class="nav-item " href="doctor-queue.html"><i class="ti ti-layout-grid"></i>Queue</a>
+<a class="nav-item " href="patient-timeline.html"><i class="ti ti-timeline"></i>Timeline</a>
+<a class="nav-item active" href="prescription-history.html"><i class="ti ti-file-prescription"></i>Prescriptions</a>
+<a class="nav-item " href="trend-graphs.html"><i class="ti ti-chart-line"></i>Results</a>
+<a class="nav-item " href="notifications.html"><i class="ti ti-bell"></i>Notifications</a>
+
+  <div class="sidebar-footer">
+    <a class="nav-item" href="index.html"><i class="ti ti-logout"></i>Sign out</a>
+  </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+  <div class="search-box"><i class="ti ti-search"></i><input placeholder="Search patients, records..." onclick="location.href='search-results.html'" readonly></div>
+  <div class="topbar-right">
+    <div class="role-switch"><a class="active" href="doctor-queue.html">Doctor</a><a class="" href="patient-search-receptionist.html">Receptionist</a><a class="" href="audit-log.html">Admin</a></div>
+    <div class="avatar">RM</div>
+  </div>
+</header>
+    <main class="content">
+      
+<div class="page-head">
+  <div>
+    <a class="breadcrumb" href="patient-profile-doctor.html"><i class="ti ti-arrow-left"></i>Anita Sharma</a>
+    <h1>Prescriptions</h1>
+  </div>
+  <a class="btn btn-primary" href="prescription-create.html"><i class="ti ti-plus"></i>New prescription</a>
+</div>
+<table>
+  <tr><th>Date</th><th>Prescription</th><th>Type</th><th>Status</th><th></th></tr>
+  <tr>
+  <td>12 Aug 2026</td><td>Latanoprost 0.005%, nightly OU</td><td class="muted">Medication</td>
+  <td><span class="badge badge-success">Active</span></td>
+  <td style="text-align:right;">
+    <a class="btn btn-ghost" href="prescription-create.html"><i class="ti ti-eye"></i></a>
+    <a class="btn btn-ghost" href="pdf-export.html"><i class="ti ti-download"></i></a>
+  </td>
+</tr>
+  <tr>
+  <td>15 Jul 2026</td><td>Latanoprost 0.005%, nightly OU</td><td class="muted">Medication</td>
+  <td><span class="badge badge-neutral">Renewed</span></td>
+  <td style="text-align:right;">
+    <a class="btn btn-ghost" href="prescription-create.html"><i class="ti ti-eye"></i></a>
+    <a class="btn btn-ghost" href="pdf-export.html"><i class="ti ti-download"></i></a>
+  </td>
+</tr>
+  <tr>
+  <td>2 Jun 2026</td><td>SPH -1.25 / -1.00, CYL -0.50 / -0.75</td><td class="muted">Spectacles</td>
+  <td><span class="badge badge-success">Active</span></td>
+  <td style="text-align:right;">
+    <a class="btn btn-ghost" href="prescription-create.html"><i class="ti ti-eye"></i></a>
+    <a class="btn btn-ghost" href="pdf-export.html"><i class="ti ti-download"></i></a>
+  </td>
+</tr>
+  <tr>
+  <td>14 Mar 2026</td><td>Timolol 0.5%, BID OU</td><td class="muted">Medication</td>
+  <td><span class="badge badge-danger">Expired</span></td>
+  <td style="text-align:right;">
+    <a class="btn btn-ghost" href="prescription-create.html"><i class="ti ti-eye"></i></a>
+    <a class="btn btn-ghost" href="pdf-export.html"><i class="ti ti-download"></i></a>
+  </td>
+</tr>
+</table>
+
+    </main>
+  </div>
+</div>
+</body>
+</html>
