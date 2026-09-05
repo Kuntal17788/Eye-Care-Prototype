@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Patient — Eye Care</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+      </span>
+      Eye Care
+    </div>
+    <div class="nav-links">
+      <a href="patients.html" class="active">Patients</a>
+      <a href="medicine-list.html">Medicine List</a>
+    </div>
+    <div class="doctor-chip">
+      <div class="avatar">DC</div>
+      Dr. Chatterjee
+      <a href="login.html" class="btn btn-ghost btn-sm" style="margin-left:2px;">Log Out</a>
+    </div>
+  </div>
+
+  <div class="content" style="max-width:760px;">
+    <div class="breadcrumb">
+      <a href="patients.html">Patients</a><span class="sep">/</span><span class="current">New Patient</span>
+    </div>
+
+    <div class="page-head">
+      <div>
+        <h1>New Patient</h1>
+        <p>One-time entry. This information doesn't change visit to visit.</p>
+      </div>
+    </div>
+
+    <div class="card card-pad">
+      <div class="form-grid">
+
+        <div class="field">
+          <label>Patient ID</label>
+          <input type="text" value="2026090008 (auto-generated)" readonly>
+          <div class="hint">Format YYYYMMXXXX — assigned automatically on save.</div>
+        </div>
+
+        <div class="field">
+          <label>Date &amp; Time</label>
+          <input type="text" value="5 Sep 2026, 4:42 PM" readonly>
+          <div class="hint">Captured automatically at registration.</div>
+        </div>
+
+        <div class="field">
+          <label>Name</label>
+          <input type="text" placeholder="Full name">
+        </div>
+
+        <div class="field">
+          <label>Contact Number</label>
+          <input type="tel" placeholder="10-digit mobile number" maxlength="10">
+        </div>
+
+        <div class="field">
+          <label>Residence</label>
+          <input type="text" placeholder="Town / area">
+        </div>
+
+        <div class="field" style="grid-column:1 / -1;">
+          <label>Age</label>
+          <div class="age-entry">
+            <input type="number" id="age-years" min="0" max="99" placeholder="Years" oninput="updateAge()">
+            <span class="age-unit">yrs</span>
+            <input type="number" id="age-months" min="0" max="11" placeholder="Months" oninput="updateAge()">
+            <span class="age-unit">mos</span>
+            <span class="age-eq">=</span>
+            <input type="text" id="age-computed" class="age-computed" readonly placeholder="12.9">
+          </div>
+          <div class="hint">Enter years and months separately — the stored age (years + months-as-a-fraction) fills in automatically, e.g. 12y 11m → 12.9.</div>
+        </div>
+
+        <div class="field">
+          <label>Gender</label>
+          <div class="radio-group">
+            <label class="radio-option"><input type="radio" name="gender"> Male</label>
+            <label class="radio-option"><input type="radio" name="gender"> Female</label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-actions">
+        <a href="patients.html" class="btn btn-secondary">Cancel</a>
+        <a href="patient-profile.html" class="btn btn-primary">Save &amp; Continue</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function updateAge() {
+  var y = parseInt(document.getElementById('age-years').value, 10);
+  var m = parseInt(document.getElementById('age-months').value, 10);
+  var out = document.getElementById('age-computed');
+  if (isNaN(y) || y < 0) { out.value = ''; return; }
+  if (isNaN(m) || m < 0) { m = 0; }
+  if (m > 11) { m = 11; }
+  var fracDigit = Math.round((m / 12) * 10);
+  var yearsStr = y < 10 ? ('0' + y) : String(y);
+  out.value = yearsStr + '.' + fracDigit;
+}
+</script>
+</body>
+</html>

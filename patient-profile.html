@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ananya Sharma — Eye Care</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+      </span>
+      Eye Care
+    </div>
+    <div class="nav-links">
+      <a href="patients.html" class="active">Patients</a>
+      <a href="medicine-list.html">Medicine List</a>
+    </div>
+    <div class="doctor-chip">
+      <div class="avatar">DC</div>
+      Dr. Chatterjee
+      <a href="login.html" class="btn btn-ghost btn-sm" style="margin-left:2px;">Log Out</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="breadcrumb">
+      <a href="patients.html">Patients</a><span class="sep">/</span><span class="current">Ananya Sharma</span>
+    </div>
+
+    <div class="consult-header" style="margin-bottom:24px;">
+      <div>
+        <div class="who">Ananya Sharma <span class="badge badge-new" style="margin-left:6px;">Female</span></div>
+        <div class="meta">ID 2026090001 · 34y 2m · 98230 11122 · Salt Lake, Kolkata</div>
+      </div>
+      <div class="header-actions">
+        <a href="edit-patient.html" class="btn btn-secondary">Edit Details</a>
+        <a href="consultation-form.html" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg>
+          New Consultation
+        </a>
+      </div>
+    </div>
+
+    <div class="page-head" style="margin-bottom:12px;">
+      <div>
+        <h1 style="font-size:18px;">Visit History</h1>
+        <p>Every consultation for this patient, most recent first. Expand a visit to see full findings.</p>
+      </div>
+    </div>
+
+    <!-- Draft entry -->
+    <div class="visit-item">
+      <div class="visit-summary" style="cursor:default;">
+        <span class="date-chip" style="background:var(--accent-tint); color:var(--accent);">5 Sep 2026</span>
+        <div class="diagnosis">
+          <span class="label">Status</span>
+          Consultation started, not yet finalized
+        </div>
+        <a href="consultation-form.html" class="btn btn-secondary btn-sm">Continue Draft</a>
+      </div>
+    </div>
+
+    <!-- Visit 1 - open by default -->
+    <div class="visit-item open">
+      <div class="visit-summary" onclick="this.parentElement.classList.toggle('open')">
+        <span class="date-chip">22 Jul 2026</span>
+        <div class="diagnosis">
+          <span class="label">Provisional diagnosis</span>
+          Mild dry eye, both eyes
+        </div>
+        <span class="visit-toggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </span>
+      </div>
+      <div class="visit-detail">
+
+        <div class="detail-section">
+          <div class="section-title">History</div>
+          <div class="detail-grid-3">
+            <div class="detail-block">
+              <div class="label">Complaints</div>
+              <div class="value">Gritty sensation and mild redness, both eyes, for 2 weeks</div>
+            </div>
+            <div class="detail-block">
+              <div class="label">Co-morbidities</div>
+              <div class="value muted">None reported</div>
+            </div>
+            <div class="detail-block">
+              <div class="label">Allergies</div>
+              <div class="value muted">None reported</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-section">
+          <div class="section-title">Exam Findings</div>
+          <div class="eye-readout">
+            <div></div><div class="h">RE</div><div class="h">LE</div>
+            <div class="row-label">Visual Acuity</div><div>6/9</div><div>6/9</div>
+            <div class="row-label">IOP</div><div>16</div><div>15</div>
+            <div class="row-label">VCDR</div><div>0.3</div><div>0.3</div>
+            <div class="row-label">Pupils</div><div>Normal, reactive</div><div>Normal, reactive</div>
+            <div class="row-label">RAPD</div><div>Absent</div><div>Absent</div>
+            <div class="row-label">Sac</div><div>Normal</div><div>Normal</div>
+            <div class="row-label">Conjunctiva</div><div>Mild injection</div><div>Mild injection</div>
+            <div class="row-label">Cornea</div><div>Clear</div><div>Clear</div>
+            <div class="row-label">Lens</div><div>Clear</div><div>Clear</div>
+            <div class="row-label">Other Findings</div><div>—</div><div>—</div>
+            <div class="row-label">Fundus</div><div>Normal</div><div>Normal</div>
+          </div>
+        </div>
+
+        <div class="detail-section">
+          <div class="section-title">Provisional Diagnosis</div>
+          <div class="value-diagnosis">Mild dry eye, both eyes</div>
+        </div>
+
+        <div class="detail-section">
+          <div class="section-title">Refraction</div>
+          <div class="eye-readout">
+            <div></div><div class="h">RE</div><div class="h">LE</div>
+            <div class="row-label">D.Sph</div><div>-0.50</div><div>-0.75</div>
+            <div class="row-label">D.Cyl</div><div>-0.25</div><div>-0.25</div>
+            <div class="row-label">Axis</div><div>90°</div><div>85°</div>
+            <div class="row-label">VA</div><div>6/6</div><div>6/6</div>
+          </div>
+        </div>
+
+        <div class="detail-section">
+          <div class="section-title">Treatment &amp; Investigation Advice</div>
+          <div class="detail-grid-3">
+            <div class="detail-block">
+              <div class="label">Treatment Notes</div>
+              <div class="value">Lubricating eye drops as below, both eyes</div>
+            </div>
+            <div class="detail-block">
+              <div class="label">Advice</div>
+              <div class="value">Avoid prolonged screen time without breaks; warm compress twice daily</div>
+            </div>
+            <div class="detail-block">
+              <div class="label">Follow-up Notes</div>
+              <div class="value muted">Reassess tear film if symptoms persist beyond 2 weeks</div>
+            </div>
+          </div>
+          <div class="detail-block" style="margin-top:16px;">
+            <div class="label">Medicines</div>
+            <ul class="rx-med-list">
+              <li><span class="num">1.</span><span class="med-name">Carboxymethylcellulose 0.5% eye drops</span><span class="med-dose">— 1 drop QID both eyes, 2 weeks</span></li>
+            </ul>
+          </div>
+          <div class="detail-block" style="margin-top:14px;">
+            <div class="label">Investigation Advice</div>
+            <div class="value muted">None advised at this visit</div>
+          </div>
+        </div>
+
+        <div class="detail-section">
+          <div class="section-title">Next Visit</div>
+          <div class="value">5 Aug 2026</div>
+        </div>
+
+        <div class="visit-actions">
+          <a href="prescription-preview.html" class="btn btn-secondary btn-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+            Download Prescription
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visit 2 - collapsed -->
+    <div class="visit-item">
+      <div class="visit-summary" onclick="this.parentElement.classList.toggle('open')">
+        <span class="date-chip">30 Jan 2026</span>
+        <div class="diagnosis">
+          <span class="label">Provisional diagnosis</span>
+          No significant abnormality detected
+        </div>
+        <span class="visit-toggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </span>
+      </div>
+      <div class="visit-detail">
+
+        <div class="detail-section">
+          <div class="section-title">History</div>
+          <div class="detail-grid-3">
+            <div class="detail-block">
+              <div class="label">Complaints</div>
+              <div class="value">Annual check-up, no complaints</div>
+            </div>
+            <div class="detail-block">
+              <div class="label">Co-morbidities</div>
+              <div class="value muted">None reported</div>
+            </div>
+            <div class="detail-block">
+              <div class="label">Allergies</div>
+              <div class="value muted">None reported</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-section">
+          <div class="section-title">Exam Findings</div>
+          <div class="eye-readout">
+            <div></div><div class="h">RE</div><div class="h">LE</div>
+            <div class="row-label">Visual Acuity</div><div>6/6</div><div>6/6</div>
+            <div class="row-label">IOP</div><div>14</div><div>14</div>
+            <div class="row-label">VCDR</div><div>0.3</div><div>0.3</div>
+            <div class="row-label">Pupils</div><div>Normal, reactive</div><div>Normal, reactive</div>
+            <div class="row-label">RAPD</div><div>Absent</div><div>Absent</div>
+            <div class="row-label">Sac</div><div>Normal</div><div>Normal</div>
+            <div class="row-label">Conjunctiva</div><div>Clear</div><div>Clear</div>
+            <div class="row-label">Cornea</div><div>Clear</div><div>Clear</div>
+            <div class="row-label">Lens</div><div>Clear</div><div>Clear</div>
+            <div class="row-label">Other Findings</div><div>—</div><div>—</div>
+            <div class="row-label">Fundus</div><div>Normal</div><div>Normal</div>
+          </div>
+        </div>
+
+        <div class="detail-section">
+          <div class="section-title">Provisional Diagnosis</div>
+          <div class="value-diagnosis">No significant abnormality detected</div>
+        </div>
+
+        <div class="detail-section">
+          <div class="section-title">Refraction</div>
+          <div class="eye-readout">
+            <div></div><div class="h">RE</div><div class="h">LE</div>
+            <div class="row-label">D.Sph</div><div>0.00</div><div>0.00</div>
+            <div class="row-label">D.Cyl</div><div>0.00</div><div>0.00</div>
+            <div class="row-label">Axis</div><div>—</div><div>—</div>
+            <div class="row-label">VA</div><div>6/6</div><div>6/6</div>
+          </div>
+        </div>
+
+        <div class="detail-section">
+          <div class="section-title">Treatment &amp; Investigation Advice</div>
+          <div class="detail-grid-3">
+            <div class="detail-block">
+              <div class="label">Treatment Notes</div>
+              <div class="value muted">None required</div>
+            </div>
+            <div class="detail-block">
+              <div class="label">Advice</div>
+              <div class="value">Continue annual eye check-ups</div>
+            </div>
+            <div class="detail-block">
+              <div class="label">Follow-up Notes</div>
+              <div class="value muted">—</div>
+            </div>
+          </div>
+          <div class="detail-block" style="margin-top:14px;">
+            <div class="label">Medicines</div>
+            <div class="value muted">None prescribed</div>
+          </div>
+          <div class="detail-block" style="margin-top:14px;">
+            <div class="label">Investigation Advice</div>
+            <div class="value muted">None advised at this visit</div>
+          </div>
+        </div>
+
+        <div class="detail-section">
+          <div class="section-title">Next Visit</div>
+          <div class="value muted">Not scheduled</div>
+        </div>
+
+        <div class="visit-actions">
+          <a href="prescription-preview.html" class="btn btn-secondary btn-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+            Download Prescription
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

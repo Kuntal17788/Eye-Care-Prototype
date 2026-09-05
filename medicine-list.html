@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medicine List — Eye Care</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+      </span>
+      Eye Care
+    </div>
+    <div class="nav-links">
+      <a href="patients.html">Patients</a>
+      <a href="medicine-list.html" class="active">Medicine List</a>
+    </div>
+    <div class="doctor-chip">
+      <div class="avatar">DC</div>
+      Dr. Chatterjee
+      <a href="login.html" class="btn btn-ghost btn-sm" style="margin-left:2px;">Log Out</a>
+    </div>
+  </div>
+
+  <div class="content" style="max-width:780px;">
+    <div class="page-head">
+      <div>
+        <h1>Medicine Master List</h1>
+        <p>Manage the medicines available in the consultation form's dropdown.</p>
+      </div>
+    </div>
+
+    <div class="card card-pad">
+      <div class="table-scroll">
+      <table class="med-table">
+        <thead>
+          <tr><th>Medicine</th><th>Category</th><th style="width:56px;"></th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Carboxymethylcellulose 0.5% eye drops</td>
+            <td class="med-cat">Lubricant</td>
+            <td><button class="icon-btn" aria-label="Remove"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2m3 0l-1 14a2 2 0 01-2 2H7a2 2 0 01-2-2L4 6"/></svg></button></td>
+          </tr>
+          <tr>
+            <td>Moxifloxacin 0.5% eye drops</td>
+            <td class="med-cat">Antibiotic</td>
+            <td><button class="icon-btn" aria-label="Remove"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2m3 0l-1 14a2 2 0 01-2 2H7a2 2 0 01-2-2L4 6"/></svg></button></td>
+          </tr>
+          <tr>
+            <td>Timolol 0.5% eye drops</td>
+            <td class="med-cat">Anti-glaucoma</td>
+            <td><button class="icon-btn" aria-label="Remove"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2m3 0l-1 14a2 2 0 01-2 2H7a2 2 0 01-2-2L4 6"/></svg></button></td>
+          </tr>
+          <tr>
+            <td>Ketorolac 0.5% eye drops</td>
+            <td class="med-cat">NSAID</td>
+            <td><button class="icon-btn" aria-label="Remove"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2m3 0l-1 14a2 2 0 01-2 2H7a2 2 0 01-2-2L4 6"/></svg></button></td>
+          </tr>
+          <tr>
+            <td>Prednisolone acetate 1% eye drops</td>
+            <td class="med-cat">Steroid</td>
+            <td><button class="icon-btn" aria-label="Remove"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2m3 0l-1 14a2 2 0 01-2 2H7a2 2 0 01-2-2L4 6"/></svg></button></td>
+          </tr>
+          <tr>
+            <td>Brimonidine 0.15% eye drops</td>
+            <td class="med-cat">Anti-glaucoma</td>
+            <td><button class="icon-btn" aria-label="Remove"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2m3 0l-1 14a2 2 0 01-2 2H7a2 2 0 01-2-2L4 6"/></svg></button></td>
+          </tr>
+          <tr>
+            <td>Atropine 1% eye drops</td>
+            <td class="med-cat">Cycloplegic</td>
+            <td><button class="icon-btn" aria-label="Remove"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2m3 0l-1 14a2 2 0 01-2 2H7a2 2 0 01-2-2L4 6"/></svg></button></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="add-med-row">
+        <input type="text" placeholder="Medicine name">
+        <input type="text" placeholder="Category (optional)">
+        <button class="btn btn-primary btn-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg>
+          Add
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

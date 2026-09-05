@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Consultation — Eye Care</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+      </span>
+      Eye Care
+    </div>
+    <div class="nav-links">
+      <a href="patients.html" class="active">Patients</a>
+      <a href="medicine-list.html">Medicine List</a>
+    </div>
+    <div class="doctor-chip">
+      <div class="avatar">DC</div>
+      Dr. Chatterjee
+      <a href="login.html" class="btn btn-ghost btn-sm" style="margin-left:2px;">Log Out</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="breadcrumb">
+      <a href="patients.html">Patients</a><span class="sep">/</span>
+      <a href="patient-profile.html">Ananya Sharma</a><span class="sep">/</span>
+      <span class="current">New Consultation</span>
+    </div>
+
+    <div class="consult-header">
+      <div>
+        <div class="who">Ananya Sharma</div>
+        <div class="meta">ID 2026090001 · 34y 2m · Female</div>
+      </div>
+      <div class="meta">5 Sep 2026, 4:42 PM</div>
+    </div>
+
+    <!-- History -->
+    <div class="consult-section">
+      <div class="section-title">History</div>
+
+      <div class="field-block">
+        <label>Co-morbidities</label>
+        <div class="textarea-wrap">
+          <textarea placeholder="e.g. Diabetes, hypertension"></textarea>
+          <button class="mic-btn" type="button" aria-label="Dictate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v1a7 7 0 01-14 0v-1M12 18v4"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="field-block">
+        <label>Allergies</label>
+        <div class="textarea-wrap">
+          <textarea placeholder="e.g. Sulfa drugs"></textarea>
+          <button class="mic-btn" type="button" aria-label="Dictate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v1a7 7 0 01-14 0v-1M12 18v4"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="field-block" style="margin-bottom:0;">
+        <label>Complaints</label>
+        <div class="textarea-wrap">
+          <textarea placeholder="What the patient reports">Gritty sensation and mild redness, both eyes, for 2 weeks</textarea>
+          <button class="mic-btn" type="button" aria-label="Dictate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v1a7 7 0 01-14 0v-1M12 18v4"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exam Findings -->
+    <div class="consult-section">
+      <div class="section-title">Exam Findings</div>
+
+      <div class="eye-section-head">
+        <div></div>
+        <div class="eye-cols">
+          <div class="eye-col-label">Right Eye (RE)</div>
+          <div class="eye-col-label">Left Eye (LE)</div>
+        </div>
+      </div>
+
+      <!-- reusable field-row pattern for each exam finding -->
+      <div class="field-row"><label>Visual Acuity</label>
+        <div class="eye-inputs">
+          <div class="eye-input"><span class="eye-tag">RE</span><input type="text"></div>
+          <div class="eye-input"><span class="eye-tag">LE</span><input type="text"></div>
+        </div>
+      </div>
+      <div class="field-row"><label>IOP</label>
+        <div class="eye-inputs">
+          <div class="eye-input"><span class="eye-tag">RE</span><input type="text" maxlength="2"></div>
+          <div class="eye-input"><span class="eye-tag">LE</span><input type="text" maxlength="2"></div>
+        </div>
+      </div>
+      <div class="field-row"><label>VCDR</label>
+        <div class="eye-inputs">
+          <div class="eye-input"><span class="eye-tag">RE</span><input type="text" placeholder="0.0"></div>
+          <div class="eye-input"><span class="eye-tag">LE</span><input type="text" placeholder="0.0"></div>
+        </div>
+      </div>
+      <div class="field-row"><label>Pupils</label>
+        <div class="eye-inputs">
+          <div class="eye-input"><span class="eye-tag">RE</span><input type="text"></div>
+          <div class="eye-input"><span class="eye-tag">LE</span><input type="text"></div>
+        </div>
+      </div>
+      <div class="field-row"><label>RAPD</label>
+        <div class="eye-inputs">
+          <div class="eye-input"><span class="eye-tag">RE</span><input type="text"></div>
+          <div class="eye-input"><span class="eye-tag">LE</span><input type="text"></div>
+        </div>
+      </div>
+      <div class="field-row"><label>Sac</label>
+        <div class="eye-inputs">
+          <div class="eye-input"><span class="eye-tag">RE</span><input type="text"></div>
+          <div class="eye-input"><span class="eye-tag">LE</span><input type="text"></div>
+        </div>
+      </div>
+      <div class="field-row"><label>Conjunctiva</label>
+        <div class="eye-inputs">
+          <div class="eye-input"><span class="eye-tag">RE</span><input type="text" value="Mild injection"></div>
+          <div class="eye-input"><span class="eye-tag">LE</span><input type="text" value="Mild injection"></div>
+        </div>
+      </div>
+      <div class="field-row"><label>Cornea</label>
+        <div class="eye-inputs">
+          <div class="eye-input"><span class="eye-tag">RE</span><input type="text" value="Clear"></div>
+          <div class="eye-input"><span class="eye-tag">LE</span><input type="text" value="Clear"></div>
+        </div>
+      </div>
+      <div class="field-row"><label>Lens</label>
+        <div class="eye-inputs">
+          <div class="eye-input"><span class="eye-tag">RE</span><input type="text"></div>
+          <div class="eye-input"><span class="eye-tag">LE</span><input type="text"></div>
+        </div>
+      </div>
+      <div class="field-row"><label>Other Findings</label>
+        <div class="eye-inputs">
+          <div class="eye-input"><span class="eye-tag">RE</span><input type="text"></div>
+          <div class="eye-input"><span class="eye-tag">LE</span><input type="text"></div>
+        </div>
+      </div>
+      <div class="field-row"><label>Fundus</label>
+        <div class="eye-inputs">
+          <div class="eye-input"><span class="eye-tag">RE</span><input type="text"></div>
+          <div class="eye-input"><span class="eye-tag">LE</span><input type="text"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Provisional Diagnosis -->
+    <div class="consult-section">
+      <div class="section-title">Provisional Diagnosis</div>
+      <div class="field-block" style="margin-bottom:0;">
+        <div class="textarea-wrap">
+          <textarea placeholder="Diagnosis">Mild dry eye, both eyes</textarea>
+          <button class="mic-btn" type="button" aria-label="Dictate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v1a7 7 0 01-14 0v-1M12 18v4"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Refraction -->
+    <div class="consult-section">
+      <div class="section-title">Refraction</div>
+
+      <div class="eye-section-head">
+        <div></div>
+        <div class="eye-cols">
+          <div class="eye-col-label">Right Eye (RE)</div>
+          <div class="eye-col-label">Left Eye (LE)</div>
+        </div>
+      </div>
+
+      <div class="field-row"><label>D.Sph</label>
+        <div class="eye-inputs">
+          <div class="eye-input"><span class="eye-tag">RE</span><input type="text" value="-0.50"></div>
+          <div class="eye-input"><span class="eye-tag">LE</span><input type="text" value="-0.75"></div>
+        </div>
+      </div>
+      <div class="field-row"><label>D.Cyl</label>
+        <div class="eye-inputs">
+          <div class="eye-input"><span class="eye-tag">RE</span><input type="text" value="-0.25"></div>
+          <div class="eye-input"><span class="eye-tag">LE</span><input type="text" value="-0.25"></div>
+        </div>
+      </div>
+      <div class="field-row"><label>Axis</label>
+        <div class="eye-inputs">
+          <div class="eye-input with-suffix"><span class="eye-tag">RE</span><input type="text" value="90"><span class="unit-suffix">°</span></div>
+          <div class="eye-input with-suffix"><span class="eye-tag">LE</span><input type="text" value="85"><span class="unit-suffix">°</span></div>
+        </div>
+      </div>
+      <div class="field-row"><label>VA</label>
+        <div class="eye-inputs">
+          <div class="eye-input"><span class="eye-tag">RE</span><input type="text" value="6/6"></div>
+          <div class="eye-input"><span class="eye-tag">LE</span><input type="text" value="6/6"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Treatment & Investigation Advice -->
+    <div class="consult-section">
+      <div class="section-title">Treatment &amp; Investigation Advice</div>
+
+      <div class="field-block">
+        <label>Treatment Notes</label>
+        <div class="textarea-wrap">
+          <textarea placeholder="Free-text instructions for the patient"></textarea>
+          <button class="mic-btn" type="button" aria-label="Dictate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v1a7 7 0 01-14 0v-1M12 18v4"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="field-block">
+        <label>Advice</label>
+        <div class="textarea-wrap">
+          <textarea placeholder="General advice"></textarea>
+          <button class="mic-btn" type="button" aria-label="Dictate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v1a7 7 0 01-14 0v-1M12 18v4"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="field-block">
+        <label>Follow-up Notes</label>
+        <div class="textarea-wrap">
+          <textarea placeholder="Anything to flag for next visit"></textarea>
+          <button class="mic-btn" type="button" aria-label="Dictate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v1a7 7 0 01-14 0v-1M12 18v4"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <label style="font-size:13px; font-weight:600; display:block; margin-bottom:8px;">Medicines</label>
+      <div class="repeat-row">
+        <select>
+          <option>Carboxymethylcellulose 0.5% eye drops</option>
+          <option>Moxifloxacin 0.5% eye drops</option>
+          <option>Timolol 0.5% eye drops</option>
+        </select>
+        <input type="text" placeholder="Dosage / frequency, e.g. 1 drop QID x 2 weeks" value="1 drop QID both eyes, 2 weeks">
+        <button class="icon-btn" aria-label="Remove medicine">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2m3 0l-1 14a2 2 0 01-2 2H7a2 2 0 01-2-2L4 6"/></svg>
+        </button>
+      </div>
+      <div class="repeat-row">
+        <select>
+          <option>— Select medicine —</option>
+        </select>
+        <input type="text" placeholder="Dosage / frequency">
+        <button class="icon-btn" aria-label="Remove medicine">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2m3 0l-1 14a2 2 0 01-2 2H7a2 2 0 01-2-2L4 6"/></svg>
+        </button>
+      </div>
+      <button class="btn btn-secondary btn-sm">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg>
+        Add Medicine
+      </button>
+      <div class="repeat-note">Up to 10 medicines per prescription. Options are pulled from the Medicine Master List.</div>
+
+      <label style="font-size:13px; font-weight:600; display:block; margin-bottom:8px;">Investigation Advice</label>
+      <div class="repeat-row single-col">
+        <input type="text" placeholder="e.g. OCT macula, both eyes">
+        <button class="icon-btn" aria-label="Remove investigation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2m3 0l-1 14a2 2 0 01-2 2H7a2 2 0 01-2-2L4 6"/></svg>
+        </button>
+      </div>
+      <button class="btn btn-secondary btn-sm">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg>
+        Add Investigation
+      </button>
+      <div class="repeat-note">Up to 5 investigation entries.</div>
+
+      <div class="field" style="max-width:240px;">
+        <label>Next Visit</label>
+        <input type="date">
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button class="btn btn-secondary">Save Draft</button>
+      <a href="prescription-preview.html" class="btn btn-primary">Finalize Consultation &amp; Generate Prescription</a>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
